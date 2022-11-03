@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/Lab6">
-    <Resource name="jdbc/usersdb" auth="Container" 
-        driverClassName="com.mariadb.jdbc.Driver"
+    <Resource name="jdbc/userdb" auth="Container" 
+        driverClassName="com.mysql.jdbc.Driver"
         url="jdbc:mysql://localhost:3306/userdb" 
         username="root" password="password" 
         maxActive="100" maxIdle="30" maxWait="10000" 
