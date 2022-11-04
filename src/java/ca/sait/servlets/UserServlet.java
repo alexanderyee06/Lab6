@@ -4,7 +4,7 @@ import ca.sait.models.User;
 import ca.sait.services.UserService;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
+import java.util.*;
 import java.util.logging.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author alexa
  */
 public class UserServlet extends HttpServlet {
+
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -27,10 +28,9 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            UserService service = new UserService();
-List<User> users;
+        UserService service = new UserService();
         try {
-            users = service.getAll();
+            List<User> users = service.getAll();
 
             request.setAttribute("users", users);
 
@@ -38,6 +38,8 @@ List<User> users;
         } catch (Exception ex) {
             Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
+
     }
 
     /**
@@ -51,7 +53,7 @@ List<User> users;
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        this.getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
     }
 
 }
