@@ -5,10 +5,9 @@ import ca.sait.models.Role;
 import ca.sait.models.User;
 import java.util.List;
 
-
 public class UserService {
     private UserDB userDB = new UserDB();
-
+    
     public User get(String email) throws Exception {
         User user = this.userDB.get(email);
         return user;

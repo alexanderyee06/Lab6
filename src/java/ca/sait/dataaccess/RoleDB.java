@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class RoleDB {
 
     public List<Role> getAll() throws Exception {
@@ -22,13 +21,15 @@ public class RoleDB {
         try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
+            
+            //rs = con.createStatement().executeQuery(sql);
+            
             while (rs.next()) {
                 int id = rs.getInt(1);
                 String name = rs.getString(2);
-
+                
                 Role role = new Role(id, name);
                 
-
                 roles.add(role);
             }
         } finally {
@@ -40,3 +41,4 @@ public class RoleDB {
         return roles;
     }
 }
+
