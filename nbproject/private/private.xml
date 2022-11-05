@@ -3,16 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/cprg357/Lab6/src/java/ca/sait/dataaccess/DBUtil.java</file>
             <file>file:/C:/cprg357/Lab6/src/java/ca/sait/servlets/UserServlet.java</file>
-            <file>file:/C:/cprg357/Lab6/web/META-INF/context.xml</file>
-            <file>file:/C:/cprg357/Lab6/web/WEB-INF/web.xml</file>
-            <file>file:/C:/cprg357/Lab6/src/java/ca/sait/models/User.java</file>
             <file>file:/C:/cprg357/Lab6/web/WEB-INF/users.jsp</file>
             <file>file:/C:/cprg357/Lab6/src/java/ca/sait/services/RoleService.java</file>
             <file>file:/C:/cprg357/Lab6/src/java/ca/sait/services/UserService.java</file>
-            <file>file:/C:/cprg357/Lab6/src/java/ca/sait/dataaccess/UserDB.java</file>
-            <file>file:/C:/cprg357/Lab6/src/java/ca/sait/dataaccess/ConnectionPool.java</file>
+            <file>file:/C:/cprg357/Lab6/src/java/ca/sait/models/Role.java</file>
             <file>file:/C:/cprg357/Lab6/src/java/ca/sait/dataaccess/RoleDB.java</file>
         </group>
     </open-files>

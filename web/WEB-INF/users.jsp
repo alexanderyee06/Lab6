@@ -11,8 +11,8 @@
 
     </head>
     <body>
-        <br
-            <h1>Alex's User Management System</h1>
+        <br>
+        <h1 style='text-align: center'>Alex's User Management System</h1>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -35,8 +35,8 @@
                                 <td>${user.lastName}</td>
                                 <td>${user.active ? "Y" : "N"}</td>
                                 <td>
-                                    <a href="">Edit</a>
-                                    <a href="">Delete</a>
+                                    <button>Edit</button>
+                                    <button type="submit" name="action" value="delete?${user.email}">Delete</button>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div style="padding-left: 100px; align-content: center" >
         <h1>Add user</h1>
         <form action="user" method="post">
             <input type="hidden" name="action" value="add">
@@ -71,10 +71,11 @@
                     </c:forEach>
                 </select>
             </div>
-            <div >
+            <div text-align:center>
                 <button type="submit">Add User</button>
             </div>
         </form>
+        <p>${message}</p>
     </div>
 
 </body>
